@@ -18,8 +18,9 @@
     <dependencies>
 
         <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-media</artifactId>
+            <groupId>dev.webfx</groupId>
+            <artifactId>webfx-kit-javafxmedia-gluon</artifactId>
+            <version>0.1.0-SNAPSHOT</version>
         </dependency>
 
         <dependency>
@@ -36,6 +37,12 @@
 
         <dependency>
             <groupId>dev.webfx</groupId>
+            <artifactId>webfx-platform-audio-gluon</artifactId>
+            <version>0.1.0-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>dev.webfx</groupId>
             <artifactId>webfx-platform-boot-java</artifactId>
             <version>0.1.0-SNAPSHOT</version>
         </dependency>
@@ -43,12 +50,6 @@
         <dependency>
             <groupId>dev.webfx</groupId>
             <artifactId>webfx-platform-console-java</artifactId>
-            <version>0.1.0-SNAPSHOT</version>
-        </dependency>
-
-        <dependency>
-            <groupId>dev.webfx</groupId>
-            <artifactId>webfx-platform-json-java</artifactId>
             <version>0.1.0-SNAPSHOT</version>
         </dependency>
 
@@ -90,13 +91,13 @@
 
         <dependency>
             <groupId>dev.webfx</groupId>
-            <artifactId>webfx-platform-visibility-gluon</artifactId>
+            <artifactId>webfx-platform-substitution-var</artifactId>
             <version>0.1.0-SNAPSHOT</version>
         </dependency>
 
         <dependency>
             <groupId>dev.webfx</groupId>
-            <artifactId>webfx-platform-windowhistory-java</artifactId>
+            <artifactId>webfx-platform-visibility-gluon</artifactId>
             <version>0.1.0-SNAPSHOT</version>
         </dependency>
 
@@ -115,6 +116,7 @@
                 <artifactId>gluonfx-maven-plugin</artifactId>
                 <configuration>
                     <attachList>
+                        <list>audio</list>
                         <list>lifecycle</list>
                         <list>storage</list>
                         <list>util</list>
@@ -130,7 +132,7 @@
                         <list>de/amr/games/pacman/ui/fx/sound/pacman/[^/]+$</list>
                         <list>de/amr/games/pacman/ui/fx/sound/voice/[^/]+$</list>
                         <list>dev/webfx/platform/meta/exe/[^/]+$</list>
-                        <list>images/checkbox/[^/]+$</list>
+                        <list>javafx/scene/control/skin/checkbox/[^/]+$</list>
                     </resourcesList>
 
                 </configuration>
